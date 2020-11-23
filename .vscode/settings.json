@@ -1,0 +1,30 @@
+{
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": true,
+  "bracket-pair-colorizer-2.colors": ["Gold", "Orchid", "LightSkyBlue"],
+  "cSpell.language": "en-GB",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/__pycache/*/**": true,
+    "**/.mypy_cache/*/**": true,
+    "**/.nox/*/**": true,
+    "**/.pytest_cache/*/**": true
+  },
+  "workbench.colorTheme": "Monokai Vibrant",
+  "workbench.iconTheme": "vscode-icons",
+  "workspace.searchEnabled": true,
+  "workspace.searchLimit": 10
+}

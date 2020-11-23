@@ -1,0 +1,53 @@
+---
+asyncapi: 2.0.0
+info:
+  title: Enviroplusmonitor
+  description: Publisher of measurements from an enviroplus shield
+  termsOfService: http://asyncapi.org/terms/
+  contact:
+    name: Philip Cutler <greenthegarden@gmail.com>
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: "0.1"
+servers:
+  local:
+    url: "192.168.1.53"
+    description: Local broker instance
+    protocol: mqtt
+    variables:
+      port:
+        description: Secure connection (TLS) is available through port 8883.
+        enum:
+          - "1883"
+          - "8883"
+        default: "1883"
+# defaultContentType: application/json
+channels:
+  homeassistant/sensor/enviroplus/3/bme280/state:
+    publish:
+      summary: BME280 measurement
+      operationId: publish_bme280
+      tags:
+        - name: bme280
+        - name: sensor
+        - name: producer
+      message:
+        description: BME280 measurement
+        payload:
+          # type: object
+          # properties:
+          $ref: "#/components/schemas/bme280MeasurementPayload"
+components:
+  schemas:
+    bme280MeasurementPayload:
+      type: object
+      properties:
+        temperature:
+          type: number
+        humidity:
+          type: number
+          minimum: 0
+          maximum: 100
+        pressure:
+          type: number

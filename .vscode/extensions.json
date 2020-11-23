@@ -1,0 +1,29 @@
+{
+  "recommendations": [
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+    "CoenraadS.bracket-pair-colorizer-2",
+    "streetsidesoftware.code-spell-checker",
+    "EditorConfig.EditorConfig",
+    "ZainChen.json",
+    "johnpapa.vscode-peacock",
+    "visualstudioexptteam.vscodeintellicode",
+    "redhat.vscode-yaml",
+    "vscode-icons-team.vscode-icons",
+    "docsmsft.docs-markdown",
+    "hediet.vscode-drawio",
+    "codezombiech.gitignore",
+    "eamodio.gitlens",
+    "tht13.html-preview-vscode",
+    "oderwat.indent-rainbow",
+    "ms-vsliveshare.vsliveshare-pack",
+    "yzhang.markdown-all-in-one",
+    "shd101wyy.markdown-preview-enhanced",
+    "davidanson.vscode-markdownlint",
+    "esbenp.prettier-vscode",
+    "tyriar.sort-lines",
+    "Gruntfuggly.todo-tree",
+    "TabNine.tabnine-vscode",
+    "tomoki1207.pdf",
+    "redhat.vscode-yaml"
+  ]
+}

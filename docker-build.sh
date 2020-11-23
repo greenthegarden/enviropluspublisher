@@ -9,7 +9,11 @@ ASYNCAPI_FILE="asyncapi-min.yaml"
 IMAGE_NAME=enviropluspublisher
 IMAGE_TAG=v0.1
 
-DOCKER_BUILDKIT=1 docker build -t "${IMAGE_NAME}:${IMAGE_TAG}" .
+DOCKER_BUILDKIT=1 docker build -t "${IMAGE_NAME}:${IMAGE_TAG}" \
+    --build-arg PORT=8080 \
+    --build-arg USER_ID=$(id -u) \
+    --build-arg GROUP_ID=$(id -g) \
+    .
 
 # Scan Docker image
 # docker scan "${IMAGE_NAME}:${IMAGE_TAG}"

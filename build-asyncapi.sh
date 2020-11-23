@@ -2,8 +2,8 @@
 
 # Default values
 
+BUILD_CODE=true
 BUILD_DOCS=false
-BUILD_CODE=false
 
 ASYNCAPI_FILE=asyncapi-min.yaml
 
